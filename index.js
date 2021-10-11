@@ -37,9 +37,11 @@ async function init() {
     const lifeData = await lifeRes.json();
 
     // 获取one一个文案及图片
-    const oneRes = await fetch(
-      `http://api.tianapi.com/txapi/one/index?key=${tianXingKey}`
-    );
+    // const oneRes = await fetch(
+    //   `http://api.tianapi.com/txapi/one/index?key=${tianXingKey}`
+    // );
+	const oneRes = require('./1.jpg');
+	
     const oneData = await oneRes.json();
     const { word, imgurl } = oneData.newslist[0];
 

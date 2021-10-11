@@ -13,7 +13,9 @@ function fn(weatherData, lifeData, word, imgurl, lovingDays) {
       <div>
         <!-- 天数 -->
         <div>
-          <p>今天是在一起的第${lovingDays}天！</p>
+          // <p>今天是在一起的第${lovingDays}天！</p>
+		  <h1>今天也要加油学习呀~</h1>
+		  <h2>typeScript、nodeJs、React、webpack</h2>
         </div>
         <!-- 图片 -->
         <div>
