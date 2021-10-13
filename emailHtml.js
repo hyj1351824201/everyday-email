@@ -1,7 +1,7 @@
-function fn(weatherData, lifeData, word, imgurl, lovingDays) {
+function fn(weatherData, lifeData, word,imgurl, lovingDays) {
+	// src="${imgurl}"  如果用每日随机图就换成这个
   const { daily: weatherDataDaily } = weatherData;
   const { daily } = lifeData;
-
   return `<!DOCTYPE html>
   <html lang="en">
     <head>
@@ -13,15 +13,15 @@ function fn(weatherData, lifeData, word, imgurl, lovingDays) {
       <div>
         <!-- 天数 -->
         <div>
-          <p>自律的第${lovingDays}天！</p>
-		  <h1>今天也要加油学习呀~</h1>
-		  <h2>typeScript、nodeJs、React、webpack</h2>
+          <p>自律的第 <span style="font-size: 20px;font-weight: bold;">${lovingDays}</span> 天！</p>
+		  <h3>今天要学习的知识点</h3>
+		  <h4>typeScript、nodeJs、React、webpack</h4>
         </div>
         <!-- 图片 -->
         <div>
           <img
             style="width: 100%; max-width: 768px"
-            src="${imgurl}"
+            src="http://m.qpic.cn/psc?/V50hNtTy19exP14cSVZd3fehVc0clkib/45NBuzDIW489QBoVep5mcXjAuQILalZncQ*yVmb2o7GuVSQq3O.9khf2u4XobdFcNDPckLl4YeJjty6GjGhX1qyLrrIjKLBfgAqmZ1gtrd4!/b&bo=OAQ4BAAAAAABFzA!&rf=viewer_4"
             alt="图片"
           />
         </div>
