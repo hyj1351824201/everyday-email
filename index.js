@@ -72,4 +72,4 @@ async function init() {
 	}
 }
 
-init();
+// init(); //这里触发开启

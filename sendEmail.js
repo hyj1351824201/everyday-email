@@ -11,9 +11,7 @@ const sendMail = async (data) => {
       pass,
     }
   });
-
   data.from = `"${data.from}" ${user}`;
-
   await transporter.sendMail(data);
 };
 
